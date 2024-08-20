@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Notes</title>
 </head>
 <body>
-$END$
+ Your Notes
+<br><br>
+ <ul>
+     <li th:each="temp : ${Notes}" th:text="${temp}"></li>
+ </ul>
+
 </body>
 </html>
